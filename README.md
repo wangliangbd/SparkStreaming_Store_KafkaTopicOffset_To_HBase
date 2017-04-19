@@ -1,0 +1,2 @@
+# SparkStreaming_Store_KafkaTopicOffset_To_HBase
+Kafka delivery semantics in the case of failure depend on how and when offsets are stored. Spark output operations are at-least-once. So if you want the equivalent of exactly-once semantics, you must either store offsets after an idempotent output, or store offsets in an atomic transaction alongside output.There is Spark Streaming how to store Kafka topic offset with HBase. 
